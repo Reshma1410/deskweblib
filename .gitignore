@@ -1,0 +1,11 @@
+# Ignore IDE configs
+.idea/
+
+# Ignore virtual environments
+venv/
+
+# Ignore build artifacts
+*.egg-info/
+__pycache__/
+build/
+dist/
