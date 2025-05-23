@@ -55,7 +55,7 @@ class WebKeywords:
         element.clear()
         element.send_keys(text)
 
-    def parse_locator(locator: str):
+    def parse_locator(self,locator: str):
         if locator.startswith("xpath="):
             return By.XPATH, locator[6:]
         elif locator.startswith("css="):

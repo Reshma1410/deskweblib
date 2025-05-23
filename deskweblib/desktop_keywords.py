@@ -83,7 +83,7 @@ class DesktopKeywords:
         return resized_image
 
 
-    def check_log_entries(start_time, check_log, file_path):
+    def check_log_entries(seld,start_time, check_log, file_path):
         initial_time = datetime.strptime(start_time, "%d-%m-%Y %H:%M:%S")
         BuiltIn().log_to_console(f"\nProvided inputs: {initial_time}, {file_path}, {check_log}")
 
@@ -106,7 +106,7 @@ class DesktopKeywords:
         return 'False'
 
 
-    def clear_log_file(file_path):
+    def clear_log_file(self,file_path):
         try:
             with open(file_path, 'w') as file:
                 file.truncate(0)

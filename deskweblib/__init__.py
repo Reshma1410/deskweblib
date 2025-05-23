@@ -69,8 +69,8 @@ class DeskWebLib:
 
     @keyword
     def launch_application(self,app_name, delay=1):
-        return self.desktop.launch_application(app_name, delay=1)
+        return self.desktop.launch_application(app_name, delay)
 
     @keyword
     def send_text(self,text, interval=0.05):
-        return self.desktop.send_text(text, interval=0.05)
+        return self.desktop.send_text(text, interval)
